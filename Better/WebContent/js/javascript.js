@@ -1,0 +1,52 @@
+$(function(){
+	$("#empForm").validate({
+		rules:{
+			username:{
+				required:true,
+				rangelength:[2,10]
+			},
+			password:{
+				required:true,
+				rangelength:[6,15]
+			},
+			repassword:{
+				required:true,
+				equalTo:"#password"
+			},
+			email:{
+				required:true,
+				email:true
+			},
+			tel:{
+				required:true,
+				rangelength:[11,11]
+			}
+			
+		},
+		
+		messages:{
+			username:{
+				required:"用户名必须输入！",
+				rangelength:"用户名长度在2和10之间！"
+			},
+			password:{
+				required:"密码必须输入！",
+				rangelength:"密码长度在6到15之间"
+			},
+			repassword:{
+				required:"请确认密码！",
+				equalTo:"密码不一致！"
+			},
+			email:{
+				required:"请输入邮箱地址！",
+				email:"邮箱格式不正确！"
+			},
+			tel:{
+				required:"请填入手机号！",
+				rangelength:"手机号不存在！"
+			}
+		}
+		
+	});
+});
+
