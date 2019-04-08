@@ -70,7 +70,7 @@ public class UpdateServlet extends HttpServlet {
 		long time=date.getTime();
 		String filename=time+"."+file.getFileExt();
 		try {
-			file.saveAs("F:/upload/images/"+filename);
+			file.saveAs("/usr/upload/image/"+filename);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

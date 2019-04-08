@@ -17,9 +17,9 @@ import java.util.ArrayList;
 
 public class DBUtil {
 	private static String diverName="com.mysql.cj.jdbc.Driver";
-	private static String url="jdbc:mysql://localhost:3306/better?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC";
+	private static String url="jdbc:mysql://188.131.189.2:3306/better?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC";
 	private static String root="root";
-	private static String psw="rjxy";
+	private static String psw="5780..an";
 	static{
 		try {
 			Class.forName(diverName);
